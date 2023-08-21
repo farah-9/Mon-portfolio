@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@emailjs/browser": "^3.11.0"
+    "@emailjs/browser": "^3.11.0",
+    "typed.js": "^2.0.16"
   }
 }
