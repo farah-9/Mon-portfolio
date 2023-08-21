@@ -139,3 +139,36 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
+
+const contactTyped = new Typed('.contact-text', {
+    strings: ['Votre Avis Compte', 'Partagez Vos Impressions !'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+});
+
+/* ================ email js============= */
+
+// (function () {
+//     emailjs.init('a7_jYV-VCYUQ7MzSe');
+// })();
+
+emailjs.init('user_yourUserId'); // Remplacez "user_yourUserId" par votre User ID
+
+// Fonction pour envoyer l'e-mail
+function sendEmail() {
+    emailjs
+        .send('service_yourServiceId', 'template_yourTemplateId', {
+            to_name: 'Recipient Name',
+            message: 'Message content',
+        })
+        .then(
+            function (response) {
+                console.log('E-mail envoyé avec succès', response);
+            },
+            function (error) {
+                console.log("Erreur lors de l'envoi de l'e-mail", error);
+            }
+        );
+}

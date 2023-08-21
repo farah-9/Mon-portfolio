@@ -190,6 +190,7 @@ span {
     width: 35vw;
     border-radius: 1000px;
     background: var(--second-bg-color);
+    animation: floatImage 4s ease-in-out infinite;
 }
 
 .about-img :hover {
