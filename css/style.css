@@ -280,35 +280,6 @@ span {
     margin-bottom: 2rem;
 }
 
-/* Portfolio Container */
-/* .portfolio-container {
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 20px; 
-    grid-auto-rows: minmax(
-        100px,
-        auto
-    ); 
-    flex-wrap: wrap;
-} */
-
-/* .portfolio-container .portfolio-box {
-    flex: 1 1 30rem;
-    background: var(--second-bg-color);
-    padding: 3rem 2rem 2rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: 0.2rem solid var(--bg-color);
-    transition: 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 2rem;
-    justify-content: space-between;
-} */
-
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
