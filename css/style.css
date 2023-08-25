@@ -281,19 +281,19 @@ span {
 }
 
 /* Portfolio Container */
-.portfolio-container {
+/* .portfolio-container {
     display: grid;
     gap: 4rem;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-    grid-gap: 20px; /* Espacement entre les éléments */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
     grid-auto-rows: minmax(
         100px,
         auto
-    ); /* Hauteur minimale de 100px et hauteur maximale automatique */
+    ); 
     flex-wrap: wrap;
-}
+} */
 
-.portfolio-container .portfolio-box {
+/* .portfolio-container .portfolio-box {
     flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 2rem;
@@ -307,6 +307,23 @@ span {
     width: 100%;
     padding: 2rem;
     justify-content: space-between;
+} */
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.portfolio-container .portfolio-box {
+    flex: 0 1 calc(50% - 2rem); /* 2 éléments par ligne avec espacement */
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    border: 0.2rem solid var(--bg-color);
+    transition: border-color 0.5s ease, transform 0.5s ease;
+    text-align: center;
+    padding: 2rem;
 }
 
 .videos-container {
@@ -326,32 +343,9 @@ span {
     max-height: 160px;
     object-fit: cover;
     border-radius: 2rem;
-    cursor: pointer;
+    cursor: default;
     transition: 0.5s ease;
     border: 1.5px solid #0ef;
-}
-
-.portfolio-container .portfolio-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.04);
-}
-
-/* Portfolio Box */
-.portfolio-box {
-    flex: calc(50% - 10px); /* Largeur des boîtes */
-    position: relative;
-    height: max-content;
-    overflow: hidden;
-    /* border: 1.5px solid #0ef; */
-    border-radius: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Lorsque la souris survole une boîte */
-.portfolio-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Changement de l'ombre au survol */
-    border-color: var(--main-color);
 }
 
 .portfolio-box img,
@@ -367,14 +361,9 @@ span {
     transition: transform 0.3s ease-in-out, border-color 0.3s ease;
 }
 
-.portfolio-container .portfolio-box {
-    background: var(--second-bg-color);
-    text-align: center;
-    padding: 3rem 2rem 2rem;
-    border-radius: 2rem;
-    text-align: center;
-    /* border: 0.2rem solid var(--main-color); */
-    transition: 0.5s ease;
+.portfolio-container .portfolio-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.04);
 }
 
 /* Portfolio Layer */
