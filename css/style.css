@@ -689,13 +689,13 @@ span {
         }
 
         .portfolio-container .portfolio-box {
-            width: 100%; /* La boîte prend la largeur totale de l'écran */
+            flex-basis: 100%; /* Changez flex-basis à 100% pour que la boîte occupe toute la largeur */
         }
     }
 
     @media (max-width: 450px) {
         html {
-            font-size: 90%;
+            font-size: 50%;
         }
 
         .contact form .input-box input {
