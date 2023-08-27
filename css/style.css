@@ -687,11 +687,15 @@ span {
         .portfolio-container {
             grid-template-columns: 1fr;
         }
+
+        .portfolio-container .portfolio-box {
+            width: 100%; /* La boîte prend la largeur totale de l'écran */
+        }
     }
 
     @media (max-width: 450px) {
         html {
-            font-size: 50%;
+            font-size: 90%;
         }
 
         .contact form .input-box input {
