@@ -652,6 +652,7 @@ span {
 
     .home-content h3 {
         font-size: 2.6rem;
+        display: flex;
     }
 
     .home-content h1 {
