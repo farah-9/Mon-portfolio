@@ -172,3 +172,23 @@ const contactTyped = new Typed('.contact-text', {
 //             }
 //         );
 // }
+
+/* ================ message afetr submit btn============= */
+
+const form = document.getElementById('contact-form');
+const successMessage = document.getElementById('success-message');
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Empêche l'envoi du formulaire
+
+    // Ici, vous pouvez ajouter le code pour envoyer le formulaire à votre serveur via EmailJS ou toute autre méthode que vous utilisez.
+
+    // Une fois que l'envoi est réussi, affichez le message de succès
+    if (successMessage.style.display === 'none') {
+        successMessage.style.display = 'block';
+    } else {
+        successMessage.style.display = 'none';
+    }
+
+    // Effacez le formulaire ou effectuez d'autres actions si nécessaire
+});
