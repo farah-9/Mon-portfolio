@@ -151,26 +151,27 @@ const contactTyped = new Typed('.contact-text', {
 /* ================ email js============= */
 
 // (function () {
-//     emailjs.init('a7_jYV-VCYUQ7MzSe');
+//     emailjs.init('wQxZrnyAbcnbqC5XG');
 // })();
 
-// emailjs.init('user_yourUserId'); // Remplacez "user_yourUserId" par votre User ID
-
-// // Fonction pour envoyer l'e-mail
 // function sendEmail() {
-//     emailjs
-//         .send('service_yourServiceId', 'template_yourTemplateId', {
-//             to_name: 'Recipient Name',
-//             message: 'Message content',
-//         })
-//         .then(
-//             function (response) {
-//                 console.log('E-mail envoyé avec succès', response);
-//             },
-//             function (error) {
-//                 console.log("Erreur lors de l'envoi de l'e-mail", error);
-//             }
-//         );
+//     const templateParams = {
+//         to_name: document.getElementById('Nom').value,
+//         from_email: document.getElementById('email').value,
+//         message: document.getElementById('message').value,
+//     };
+
+//     emailjs.send('service_dqhb5nh', 'template_pnx1z7r', templateParams).then(
+//         function (response) {
+//             console.log(
+//                 'Votre message a bien été transmis à François',
+//                 response
+//             );
+//         },
+//         function (error) {
+//             console.error('Error sending email', error);
+//         }
+//     );
 // }
 
 /* ================ message afetr submit btn============= */
