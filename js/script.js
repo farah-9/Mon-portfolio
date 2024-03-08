@@ -131,8 +131,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /* ================Typed js============= */
 const typed = new Typed('.multiple-text', {
     strings: [
-        'Développeur Full Stack',
-        "En recherche d'Alternance pour Octobre 2023",
+        'Editeur de Solutions Numériques'
     ],
     typeSpeed: 100,
     backSpeed: 100,
