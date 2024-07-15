@@ -131,7 +131,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /* ================Typed js============= */
 const typed = new Typed('.multiple-text', {
     strings: [
-        'Editeur de Solutions Numériques'
+        'SUPPLY CHAIN MANAGER'
     ],
     typeSpeed: 100,
     backSpeed: 100,
